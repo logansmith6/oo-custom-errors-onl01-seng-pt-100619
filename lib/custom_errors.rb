@@ -11,7 +11,7 @@ class Person
       if person.class != Person
         begin
           raise PartnerError
-        rescue YourCustomError => error
+        rescue PartnerError => error
           puts error.message
       else
         person.partner = self
